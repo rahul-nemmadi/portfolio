@@ -1,0 +1,243 @@
+<!DOCTYPE html>    
+</html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Nemmadi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ef433667cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/rahul_logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="main">
+            <div class="header-text header-col-1">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I`m <span>Rahul Nemmadi</span><br>From India</h1>
+                <div class="header-links">
+                    <a href="https://www.linkedin.com/in/rahul-nemmadi-2219b2265"><i class="fa-brands fa-linkedin"></i></a>
+                    <span class="seperate">|</span>
+                    <a href="https://github.com/rahul-nemmadi"><i class="fa-brands fa-github"></i></a>
+                    <!-- <span class="seperate">|</span>
+                    <a herf="www.email.com"><i class="fa-solid fa-envelope"></i></a> -->
+                </div>
+            </div>
+            <div class="header-img header-col-2">
+                <img src="images/rahul.jpg" alt="user">
+            </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------------About Section----------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/rahul.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Rahul Nemmadi, a passionate and skilled B.Tech student in Information Technology at Andhra Loyola Institute of
+                    Engineering & Technology, with a CGPA of 7.7. My expertise spans full stack web development, focusing on technologies
+                    such as HTML, CSS, JavaScript, ReactJS, NodeJS, and databases like MongoDB and MySQL. I have completed internships at
+                    Datavalley and EI Systems, where I gained hands-on experience in both front-end and back-end development, building
+                    responsive web applications. I am also proficient in Java, Python, and IT automation.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br><br>C, Java, Python, JavaScript, CSS, HTML, SQL</li>
+                            <li><span>Web Development</span><br><br>React.js, Node.js, MongoDB, Bootstrap, Chakra UI, Material UI</li>
+                            <li><span>Tools and IDEs</span><br><br>VS Code, PyCharm, IntelliJ, Eclipse, Git & GitHub  </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Jun - 2024-Aug</span><br><br>Java Full Stack Developer Intern at Datavalley IT Solutions</li>
+                            <li><span>2024-Jul - 2024-Aug</span><br><br>Front End Developer Intern at EI Systems Technologies</li>
+                            <li><span>2023-Jun - 2023-Jul</span><br><br>Data Science with Python at Coincent</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025</span><br><br>B Tech from Andhra Loyola Institute of Engineering and Technology | CGPA  7.7 / 10.0</li>
+                            <li><span>2019 - 2021</span><br><br>Intermediate from Sri Chaitanya Junior College | Marks 718/1000</li>
+                            <li><span>2018 - 2019</span><br><br>SSC from Ravindra Bharathi High School | GPA 9.5/10.0</li>
+                        </ul>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ---------------------Services Section----------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <!-- <img src="images/work-1.png" alt="service-1"> -->
+                    <p>I can build responsive websites using MERN Stack.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>Front End Development</h2>
+                    <!-- <img src="images/work-2.png" alt="service-2">         -->
+                    <p>I can build interactive user interfaces using React.js, Bootstrap, Chakra UI and Material UI.</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-node"></i>
+                    <h2>Back End Development</h2>
+                    <!-- <img src="images/work-3.png" alt="service-3">    -->
+                    <p>I can build server-side applications using Node.js and Express.js.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ---------------------Portfolio Section----------------- -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-2.png" alt="work-1">
+                        <div class="layer">
+                            <h3>Chatting Application</h3>
+                            <p>The Real-Time Chat Application enables instant messaging, chat room participation, and live updates via WebSocket. It
+                            ensures secure authentication with JWT and offers a responsive, user-friendly interface using React and Chakra UI.</p>
+                            <a href="https://github.com/dsatish1252/MERN-Chat-App"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="work-2">
+                        
+                        <div class="layer">
+                        <h3>Medicine Recomendation System</h3>
+                        <p>Developed a Medicine Recommendation System using data-driven algorithms to provide personalized treatment suggestions
+                        based on patient profiles and medical history.</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-4.png" alt="work-3">
+                        
+                        <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The Real-Time Chat Application enables instant messaging, chat room participation, and live updates via WebSocket. It
+                        ensures secure authentication with JWT and offers a responsive, user-friendly interface using React and Chakra UI.</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+<!-- ---------------------Contact Section----------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>nemmadirahul@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone-flip"></i>+91 81225959494</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/share/19VUJ8MMgf/?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/rahul_nemmadi/profilecard/?igsh=MnpseGNpcDk3emV2"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/rahul-nemmadi-2219b2265"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://x.com/SatishDasu"><i class="fa-brands fa-twitter-square"></i></a>
+
+                        </div>
+                        <a href="images/Rahul_resumee .pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">Copyright &copy; Satish Dasu</p>
+        </div>
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tab){
+            for(i=0; i<tabContents.length; i++){
+                tabContents[i].style.display = "none";
+            }
+            for(i=0; i<tabLinks.length; i++){
+                tabLinks[i].classList.remove('active-link');
+            }
+            document.getElementById(tab).style.display = "block";
+            event.currentTarget.classList.add('active-link');
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+        var header = document.getElementById('header');
+
+        function openMenu(){
+            sidemenu.style.right = '0';
+            header.style.right = '200px';
+        }
+        function closeMenu(){
+            sidemenu.style.right = '-200px';
+            header.style.right = '0';
+        }
+    </script>
+    <script>
+        const scriptURL = ''
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.querySelector('#msg');
+        
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                    
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
